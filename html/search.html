@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: #382222;
+    
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 30px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px 0 0 30px;
+    border-right: none;
+    width: 300px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 30px;
+    background-color: #007BFF;
+    color: white;
+    border: 1px solid #007BFF;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.search-container button i {
+    margin: 0;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <form action="search_results.php" method="get">
+            <input type="text" placeholder="Search..." name="query" required>
+            <button type="submit"><i class="fas fa-search"></i></button>
+        </form>
+    </div>
+</body>
+</html>
